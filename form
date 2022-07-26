@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(31, 30, 30);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .con {
+            height: 500px;
+            width: 920px;
+            background: linear-gradient(45deg, rgb(47, 0, 255), rgb(47, 0, 255),
+                    rgb(0, 136, 255), rgb(0, 234, 255), rgb(0, 34, 255));
+        }
+
+        .text {
+            width: 30%;
+            height: 80%;
+            background-color: rgba(0, 255, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            float: left;
+        }
+
+        .text .logo {
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+        }
+
+        .text #pera {
+            text-align: center;
+            padding: 30px;
+            margin-top: 0px;
+        }
+
+        .text .login {
+            padding: 9px 45px;
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            border: 2px solid white;
+        }
+
+        .text img {
+            width: 100px;
+        }
+
+        .meta {
+            height: 83%;
+            width: 67%;
+            background-color: white;
+            float: right;
+            margin-top: 5%;
+            padding: 50px;
+            margin-right: 3%;
+            border-top-left-radius: 20%;
+            border-bottom-left-radius: 20%;
+        }
+
+        .meta .heading {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        form select,
+        input {
+            padding: 7px 30px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        form button {
+            padding: 9px 45px;
+            background-color: blue;
+            color: black;
+            border-radius: 25px;
+            border: 2px solid white;
+            position: relative;
+            left: 200px;
+            top: 20px;
+        }
+
+        form button:hover {
+            background: white;
+            color: black;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="text">
+            <img src="favpng_logo-rocket.png" alt="">
+            <h2 class="logo">Welcome</h2>
+            <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum quis harum minus ullam
+                .</p>
+            <button class="login">login</button>
+        </div>
+        <div class="meta">
+            <h2 class="heading">apply as a employ</h2>
+            <form action="">
+                <input type="text" name="firmname" id="fname" placeholder="first name"><input type="email" name="email"
+                    id="emaill" placeholder="email"><br>
+                <input type="text" name="lastname" id="lname" placeholder="last name"><input type="text" name="phone"
+                    id="number" placeholder="your number"><br>
+                <input type="password" name="password" id="secretcode" placeholder="password" required><select
+                    name="question" id="doubt">
+                    <option value="ask">your question</option>
+                    <option value="name">what is the company name</option>
+                    <option value="email">email does not accept</option>
+                    <option value="aligible">if you are not aligible</option>
+                </select>
+                <input type="password" name="cpaddword" id="ccode" placeholder="comfirm password"><input type="text"
+                    name="answer" id="ans" placeholder="enter your answer here"><br>
+                <input type="radio" name="gender" id="male">male<input type="radio" name="gender" id="female"> female
+
+                <button>register</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
